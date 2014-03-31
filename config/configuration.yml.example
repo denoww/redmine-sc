@@ -84,12 +84,16 @@ default:
   email_delivery:
     delivery_method: :smtp
     smtp_settings:
-      address: smtp.example.net
+      address: smtp.sendgrid.net
       port: 25
-      domain: example.net
-      authentication: :login
-      user_name: "redmine@example.net"
-      password: "redmine"
+      domain: seucondominio.com.br
+      authentication: :plain
+      user_name: "denoww"
+      password: "scdf9imNqt5"
+
+
+
+
 
   # Absolute path to the directory where attachments are stored.
   # The default is the 'files' directory in your Redmine instance.
