@@ -12,3 +12,5 @@ end
 
 # Initialize the rails application
 RedmineApp::Application.initialize!
+
+
