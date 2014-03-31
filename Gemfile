@@ -20,6 +20,9 @@ group :openid do
 end
 
 gem "pg"
+gem "puma" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
+
+
 
 platforms :mri, :mingw do
   # Optional gem for exporting the gantt to a PNG file, not supported with jruby
