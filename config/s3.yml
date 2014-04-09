@@ -1,19 +1,39 @@
 production:
-  access_key_id: 
-  secret_access_key: 
-  bucket: 
-  endpoint:
-  secure:
-  private:
-  expires: 
-  proxy:
+  access_key_id: AKIAJF2TZFEHXVDOCVSA
+  secret_access_key: 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
+  bucket: redmineseucondominioproduction
+  # endpoint:
+  # secure:
+  # private:
+  # expires:
+  # proxy:
 
 development:
-  access_key_id: 
-  secret_access_key: 
-  bucket: 
-  endpoint:
-  secure:
-  private:
-  expires: 
-  proxy:
+  access_key_id: AKIAJF2TZFEHXVDOCVSA
+  secret_access_key: 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
+  bucket: redmineseucondominiodevelopment
+  # endpoint:
+  # secure:
+  # private:
+  # expires:
+  # proxy:
+
+# production:
+#   access_key_id:
+#   secret_access_key:
+#   bucket:
+#   endpoint:
+#   secure:
+#   private:
+#   expires:
+#   proxy:
+
+# development:
+#   access_key_id:
+#   secret_access_key:
+#   bucket:
+#   endpoint:
+#   secure:
+#   private:
+#   expires:
+#   proxy:
