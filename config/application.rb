@@ -25,6 +25,8 @@ module RedmineApp
       "plugins/open_flash_chart/assets/",
       "plugins/redmine_agile/assets/",
       "plugins/redmine_charts2/assets/",
+      "plugins/redmine_timelog_timer/assets/",
+
     )
 
     # Only load the plugins named here, in the order given (default is alphabetical).
