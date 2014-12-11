@@ -22,9 +22,7 @@ module RedmineApp
     config.assets.initialize_on_precompile = false
 
     config.assets.paths << Rails.root.join(
-      "plugins/open_flash_chart/assets/",
       "plugins/redmine_agile/assets/",
-      "plugins/redmine_charts2/assets/",
       "plugins/redmine_timelog_timer/assets/",
 
     )
