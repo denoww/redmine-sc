@@ -89,7 +89,7 @@ default:
       domain: seucondominio.com.br
       authentication: :plain
       user_name: "rodrigosc"
-      password: "scdf9imNqt5"
+      password: <%= ENV['MAIL_DELIVERY_PASSWORD']%>
 
 
 
