@@ -19,7 +19,7 @@
           <% end %>
         </p>
         <% if @query.has_column_name?(:description) && !issue.description.blank? %>
-        <em class="info description">
+        <em class="card-info description">
           <%= issue.description.truncate(200) %>
         </em>
         <% end %>
@@ -31,7 +31,7 @@
           <% end %>
         <% end %>
         <% if @query.has_column_name?(:assigned_to) %>
-        <p class="info" style="<%= 'display: none;' unless issue.assigned_to %>">
+        <p class="card-info" style="<%= 'display: none;' unless issue.assigned_to %>">
           <span class="user"><%= avatar(issue.assigned_to, :size => "14").to_s.html_safe + " " + link_to_user(issue.assigned_to) if issue.assigned_to %></span>
         </p>
         <% end %>
