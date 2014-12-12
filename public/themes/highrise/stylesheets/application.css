@@ -10,13 +10,13 @@
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#header > h1 {
 		/* Reference the @2x Sprite */
 		background-image: url(../images/logo-2x.png);
 		/* Translate the @2x sprite's dimensions back to 1x */
-		background-size: 43px 30px; 
+		background-size: 43px 30px;
 	}
 }
 
@@ -51,13 +51,13 @@ div.filters h2 .scope_title a {
 color: #222 !important;
 }
 
-div#content > h2, 
-div#content h2.contacts_header, 
-div#content > div.filters h2, 
-div#content > #add-news > h2, 
+div#content > h2,
+div#content h2.contacts_header,
+div#content > div.filters h2,
+div#content > #add-news > h2,
 div#content > #add-message > h2,
-div#content > .message.details > h2, 
-div#content > .board.details > h2,  
+div#content > .message.details > h2,
+div#content > .board.details > h2,
 div#content > #add-document > h2 {
 	background: #F1F5FA;
 	padding-top: 15px;
@@ -97,7 +97,7 @@ p.subtitle {
 
 .contextual a:hover, .contextual a:visited:hover {color: #333;}
 
-div.filters h2 .scope_title a { color: #222; text-decoration: none; } 
+div.filters h2 .scope_title a { color: #222; text-decoration: none; }
 
 h2, .wiki h1 { color: #222;}
 h3, .wiki h2 { color: #222; }
@@ -115,7 +115,7 @@ div#content > div.wiki {
 }
 
 #main-menu li a.selected, #main-menu li a.selected:hover {
-	background-color: #EEEEEE; 
+	background-color: #EEEEEE;
 	color: #222;
 }
 
@@ -127,15 +127,15 @@ div#content > div.wiki {
 	padding-top: 10px;
 }
 
-div#welcome-store-content h1, 
-div#welcome-store-content h2, 
-div#welcome-store-content h3, 
+div#welcome-store-content h1,
+div#welcome-store-content h2,
+div#welcome-store-content h3,
 div#welcome-store-content h4 {
 	color: #222;
 }
 
-#content, #main.nosidebar #content { 
-	background: #fff; 
+#content, #main.nosidebar #content {
+	background: #fff;
 	-webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0 0 3px #ccc;
 	-moz-box-shadow: 0 0 3px #ccc;
@@ -179,14 +179,17 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {border-bottom: 0px;}
 #main-menu li a.selected, #main-menu li a.selected:hover { background-color:#EEEEEE; }
 */
 /* Tables */
-table.list tbody td, table.list tbody tr:hover td { border: solid 1px #d7d7d7; }
+table.list tbody td{
+  /*border: solid 1px #d7d7d7;*/
+  padding: .5em;
+}
 table.list thead th {
-	border-width: 1px;
+/*	border-width: 1px;
 	border-style: solid;
 	border-top-color: #d7d7d7;
 	border-right-color: #d7d7d7;
 	border-left-color: #d7d7d7;
-	border-bottom-color: #d7d7d7;
+	border-bottom-color: #d7d7d7;*/
 }
 
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
@@ -218,7 +221,7 @@ tr.odd.priority-4 td, tr.even.priority-4 td { border-color: #fcc; }*/
 
 /*Low*/
 tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover { color: #559; }
-tr.odd.priority-3 { background: #eaf7ff; }
+tr.odd.priority-3 { background: #FFF; }
 tr.even.priority-3, table.list tbody tr.even.priority-3:hover { color: #559; }
 tr.even.priority-3 { background: #f2faff; }
 tr.priority-3 a { color: #559; }
@@ -234,15 +237,15 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:f
 option { border-bottom: 1px dotted #d7d7d7; }
 
 /* Misc */
-.box { background-color: #fcfcfc; }   
+.box { background-color: #fcfcfc; }
 
 .wiki img {
 	max-width: 100%;
-}  
+}
 
 .wiki table img {
 	/*width: 100%;*/
-}  
+}
 
 #wrapper2 {
 /*	margin: 0pt auto;
@@ -403,7 +406,7 @@ span.tag-label-color:hover {
 
 span.tag-label-color a, span.tag-label-color span {
 	font-weight: bold !important;
-	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif !important; 
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif !important;
 }
 
 span.tag-label-color:hover a {
@@ -418,7 +421,7 @@ input.autocomplete {
 }
 
 /*******************/
-/* 		STORE			
+/* 		STORE
 /*******************/
 
 div#main-menu li a.products {
@@ -428,7 +431,7 @@ div#main-menu li a.products {
 
 div#main-menu li a.products.selected {
 	background-color: #E5E3DE !important;
-	color: #222; 
+	color: #222;
 }
 
 a.buy-button.blue {
@@ -493,7 +496,7 @@ div.message.reply {
 }
 
 /*******************/
-/* 		jQuery UI			
+/* 		jQuery UI
 /*******************/
 .ui-widget {
 	font-family: inherit;

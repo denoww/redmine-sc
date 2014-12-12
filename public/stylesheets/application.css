@@ -623,7 +623,7 @@ input.autocomplete.ajax-loading {
 .role-visibility {padding-left:2em;}
 
 /***** Flash & error messages ****/
-#errorExplanation, div.flash, .nodata, .warning, .conflict {
+#errorExplanation, div.flash, .nodata, .warning, .conflict, .info, .danger, .success {
   padding: 4px 4px 4px 30px;
   margin-bottom: 12px;
   font-size: 1.1em;
@@ -654,8 +654,13 @@ div.flash.warning, .conflict {
   text-align: left;
 }
 
+.nodata, .success, .warning, .info, .danger{  text-align: center; border-width: 1px;}
+
+.danger  {  background-color: #FFC1C1; border-color: #CA2525; color: #A60C0C; }
+.success {  background-color: #D5FFC1; border-color: #35CA25; color: #7FA60C; }
+.info    {  background-color: #C1E7FF; border-color: #2566CA; color: #0C4EA6; }
+
 .nodata, .warning {
-  text-align: center;
   background-color: #FFEBC1;
   border-color: #FDBF3B;
   color: #A6750C;
@@ -1214,7 +1219,7 @@ tr.priority-3 a { color: #900; }
 tr.odd.priority-3 td, tr.even.priority-3 td { border-color: #fcc; }
 
 tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #559; }
-tr.odd.priority-1 { background: #eaf7ff; }
+tr.odd.priority-1 { background: #FFF; }
 tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #559; }
 tr.even.priority-1 { background: #f2faff; }
 tr.priority-1 a { color: #559; }
