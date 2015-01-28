@@ -137,6 +137,7 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (2.3.0)
+    redmine_github_hook (2.1.0)
     rmagick (2.13.2)
     rspec (2.11.0)
       rspec-core (~> 2.11.0)
@@ -235,6 +236,7 @@ DEPENDENCIES
   rake (~> 10.1.1)
   rdoc (>= 2.4.2)
   redcarpet (~> 2.3.0)
+  redmine_github_hook
   rmagick (>= 2.0.0)
   rspec (~> 2.11.0)
   rspec-rails (~> 2.11.0)
