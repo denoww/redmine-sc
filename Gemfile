@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'aws-sdk' #plugin do s3 em /plugins/redmine_s3
 
+gem "redmine_github_hook"
+
 gem "rails", "3.2.17"
 gem "rake", "~> 10.1.1"
 gem "jquery-rails", "~> 2.0.2"
