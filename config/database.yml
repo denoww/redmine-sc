@@ -19,7 +19,11 @@ test:
 
 production: &padrao_production
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  encoding: utf8
+  host:     <%= ENV['POSTGRES_HOST'] %>
+  database: <%= ENV['POSTGRES_DATABASE'] %>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 staging:
   <<: *padrao_production
