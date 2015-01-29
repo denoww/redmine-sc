@@ -1,0 +1,25 @@
+#
+development: &padrao_development
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  database: <%= ENV['POSTGRES_DATABASE'] %>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+
+local_staging:
+  <<: *padrao_development
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  database: <%= ENV['POSTGRES_DATABASE'] %>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+
+production: &padrao_production
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+
+staging:
+  <<: *padrao_production
