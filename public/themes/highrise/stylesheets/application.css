@@ -195,11 +195,11 @@ table.list thead th {
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 table.list tr.issue a { color: #666; }
 
-tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #900; }
+tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #900; font-weight: bold; }
 tr.odd.priority-1 { background: #ffc4c4; }
-tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #900; }
+tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #900; font-weight: bold; }
 tr.even.priority-1 { background: #ffd4d4; }
-tr.priority-1 a { color: #900; }
+tr.priority-1 a, tr.priority-1:hover a { color: #900; }
 tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #ffb4b4; }
 
 tr.odd.priority-2, table.list tbody tr.odd.priority-2:hover { color: #900; }
