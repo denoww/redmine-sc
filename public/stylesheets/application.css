@@ -1197,13 +1197,6 @@ h2 img { vertical-align:middle; }
 }
 
 
-tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover { color: #900; font-weight: bold; }
-tr.odd.priority-5 { background: #ffc4c4; }
-tr.even.priority-5, table.list tbody tr.even.priority-5:hover { color: #900; font-weight: bold; }
-tr.even.priority-5 { background: #ffd4d4; }
-tr.priority-5 a, tr.priority-5:hover a { color: #900; }
-tr.odd.priority-5 td, tr.even.priority-5 td { border-color: #ffb4b4; }
-
 tr.odd.priority-0, table.list tbody tr.odd.priority-0:hover { color: #900; }
 tr.odd.priority-0 { background: #ffc4c4; }
 tr.even.priority-0, table.list tbody tr.even.priority-0:hover { color: #900; }
