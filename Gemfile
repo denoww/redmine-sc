@@ -24,6 +24,7 @@ group :openid do
 end
 
 gem "pg"
+gem "puma" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
 gem "unicorn" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
 
 
