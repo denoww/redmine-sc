@@ -27,6 +27,9 @@ gem "pg"
 gem "puma" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
 gem "unicorn" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
 
+gem "unicorn" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
+
+gem "libxml-ruby"
 
 
 platforms :mri, :mingw do
@@ -92,6 +95,9 @@ group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
   gem "capistrano"
+  gem "capistrano-bundler"
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails'
 end
 
 group :test do

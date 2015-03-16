@@ -5,13 +5,16 @@ set :application, 'sc_redmine'
 set :repo_url, 'git@github.com:denoww/redmine-sc.git'
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/sc_redmine'
 
 # Default value for :scm is :git
 set :scm, :git
+
+set :rvm_type, :user                     # Defaults to: :auto
+set :rvm_ruby_version, '2.2.0'      # Defaults to: 'default'
 
 # Default value for :format is :pretty
 # set :format, :pretty
