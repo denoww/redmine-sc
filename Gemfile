@@ -91,6 +91,7 @@ require 'yaml'
 group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
+  gem "capistrano"
 end
 
 group :test do
