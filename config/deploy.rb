@@ -14,7 +14,7 @@ set :deploy_to, '/var/www/sc_redmine'
 set :scm, :git
 
 set :rvm_type, :user                     # Defaults to: :auto
-set :rvm_ruby_version, '2.2.0'      # Defaults to: 'default'
+set :rvm_ruby_version, '2.1.5'      # Defaults to: 'default'
 
 # Default value for :format is :pretty
 # set :format, :pretty
@@ -23,7 +23,7 @@ set :rvm_ruby_version, '2.2.0'      # Defaults to: 'default'
 # set :log_level, :debug
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')

@@ -29,8 +29,6 @@ gem "unicorn" # http server que economiza memoria (pagamentos gasta muita memori
 
 gem "unicorn" # http server que economiza memoria (pagamentos gasta muita memoria quando tem mta parcela)
 
-gem "libxml-ruby"
-
 
 platforms :mri, :mingw do
   # Optional gem for exporting the gantt to a PNG file, not supported with jruby
@@ -94,10 +92,14 @@ require 'yaml'
 group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
+
+  # Capistrano
   gem "capistrano"
   gem "capistrano-bundler"
   gem 'capistrano-rvm'
   gem 'capistrano-rails'
+  gem 'capistrano-nginx-unicorn'
+  gem 'capistrano-safe-deploy-to' # coloca user como ownwe da pasta /var/ww/myapp
 end
 
 group :test do

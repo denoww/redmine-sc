@@ -3,7 +3,8 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server '45.55.189.66', user: 'deployer', roles: %w{app}, my_property: :my_value
+server '45.55.189.66',    user: 'deployer', roles: %w{app}
+server '104.236.239.193', user: 'deployer', roles: %w{app}
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
