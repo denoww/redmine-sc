@@ -1,0 +1,41 @@
+function timeString2min(str) {
+    str = str.toLowerCase();
+    if (str.match(/\d\d?:\d\d?/)) {
+        var arr = str.trim().split(" ");
+        var time_arr = arr[0].trim().split(':');
+        var h = parseInt(time_arr[0], 10) + (arr.length == 2 && arr[1].search('<%= l('time.pm') %>') != -1 ? 12 : 0);
+        var m = parseInt(time_arr[1], 10);
+        return h * 60 + m;
+    }
+    var time_factor = {"m": 1, "min": 1, "h": 60, "d": 3600};
+    var min = 0;
+    var time_arr = str.match(/\d+\s*\D+/g);
+    jQuery.each(time_arr, function (index, item) {
+        item = item.trim();
+        var num = item.match(/\d+/);
+        var fac = item.match(/\D+/)[0].trim().toLowerCase();
+        if (time_factor[fac]) {
+            min += num * time_factor[fac];
+        }
+    });
+    return min;
+}
+function min2parsedTimeString(min) {
+    var am_pm_notation = <%= !Setting.time_format['%p'].nil?%>;
+    if (am_pm_notation) {
+        var am = min % 720 == min;
+        return min2timeString(min % 720) + ' ' + (am ? '<%= l('time.am') %>' : '<%= l('time.pm') %>');
+    } else {
+        return min2timeString(min);
+    }
+}
+
+function min2timeString(min) {
+    var h = Math.floor(min / 60);
+    var m = min % 60;
+    return (h < 10 ? "0" : "") + h + ":" + (m < 10 ? "0" : "") + m;
+}
+
+function current_user_api_key(){
+    return '<%=User.current.api_key%>'
+}

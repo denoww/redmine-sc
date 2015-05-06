@@ -3,9 +3,9 @@ development: &padrao_development
   host: localhost
   adapter: postgresql
   encoding: utf8
-  database: <%= ENV['POSTGRES_DATABASE'] %>
-  username: <%= ENV['POSTGRES_USERNAME'] %>
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  database: sc_redmine
+  username: postgres
+  password: "12345678"
 
 local_staging:
   <<: *padrao_development

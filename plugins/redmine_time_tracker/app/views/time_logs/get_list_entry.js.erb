@@ -1,0 +1,6 @@
+$('#<%= "entry-" + @entry.id.to_s %>').html('<%= escape_javascript(render(:partial => 'time_logs/list_entry', :locals => {:entry => @entry, :query => @query_logs})) %>');
+$('#<%= "entry-"+ @entry.id.to_s %>').addClass('hascontextmenu');
+contextMenuHide();
+contextMenuUnselectAll();
+redmine_time_tracker.TimeTracker.hideMultiFormButtons('tl_edit_form_update_button');
+redmine_time_tracker.TimeTracker.hideMultiFormButtons('tl_book_form_button');
